@@ -1,0 +1,16 @@
+.box {
+    /* width: 200px;
+    height: 200px; */
+    /* background-color: black;  */
+    /* margin: 50px auto; */
+    /* position: relative; */
+    box-shadow: 
+     /* Outer glow */
+      /* 0 0 20px 10px rgba(255, 217, 0, 0.589),  */
+      /* Mid glow */
+      /* 0 0 40px 20px rgba(255, 217, 0, 0.381),  */
+      /* Far glow */
+      0 0 60px 30px rgba(255, 217, 0, 0.537); 
+    border-radius: 20px; /* Optional */
+  }
+  
