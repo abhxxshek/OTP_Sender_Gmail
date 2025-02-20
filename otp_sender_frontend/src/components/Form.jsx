@@ -14,7 +14,7 @@ const Form = () => {
 
   function sendOtp() {
     axios
-      .post("http://localhost:5000/otp/send-otp", { email })
+      .post("https://otp-sender-backend-snm3.onrender.com/otp/send-otp", { email })
       .then((res) => {
         setOtpsend(true);
         setMessage(res.data.message);
@@ -27,7 +27,7 @@ const Form = () => {
 
   function verifyOtp() {
     axios
-      .post("http://localhost:5000/otp/verify-otp", { email, otp })
+      .post("https://otp-sender-backend-snm3.onrender.com/otp/verify-otp", { email, otp })
       .then((res) => {
         navigate("/success-page");
       })
