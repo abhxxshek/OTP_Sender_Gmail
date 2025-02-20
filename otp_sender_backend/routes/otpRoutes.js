@@ -30,7 +30,7 @@ router.post('/send-otp',async(req,res)=>{
         from: 'ambient963@gmail.com',
         to: email,
         subject: 'Your OTP',
-        text: `Your OTP is ${otp}`
+        text: `Your OTP is ${otp}.OTP is valid for only 5 minutes`
         };
 
         transporter.sendMail(mailOptions,(error,info)=>{
